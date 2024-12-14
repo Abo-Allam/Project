@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صناديق بألوان مختلفة</title>
+  <style>
+    /* تنسيق الحاوية */
+    .container {
+      display: flex; /* وضع العناصر بجانب بعضها */
+      justify-content: space-around; /* توزيع العناصر بالتساوي */
+      margin: 20px; /* هوامش الحاوية */
+      padding: 10px; /* حشوات الحاوية */
+    }
+
+    /* تصميم الصناديق */
+    .box {
+      width: 30%; /* عرض الصندوق */
+      padding: 20px; /* حشوات داخلية */
+      border: 2px solid #ccc; /* حواف */
+      border-radius: 10px; /* حواف دائرية */
+      text-align: center; /* محاذاة المحتوى للوسط */
+    }
+
+    /* ألوان مختلفة لكل صندوق */
+    .box1 {
+      background-color: #ffcccc; /* لون وردي */
+    }
+
+    .box2 {
+      background-color: #ccffcc; /* لون أخضر فاتح */
+    }
+
+    .box3 {
+      background-color: #ccccff; /* لون أزرق فاتح */
+    }
+
+    /* صورة الرابط */
+    .box a img {
+      width: 100%; /* جعل الصورة بعرض الصندوق */
+      border-radius: 5px; /* جعل الصورة بحواف مستديرة */
+      transition: transform 0.3s ease; /* تأثير التحريك عند التمرير */
+    }
+
+    /* تأثير عند التمرير فوق الصورة */
+    .box a img:hover {
+      transform: scale(1.05); /* تكبير الصورة قليلاً */
+    }
+  </style>
+</head>
+<body>
+  <!-- الحاوية -->
+  <div class="container">
+    <!-- الصندوق الأول -->
+    <div class="box box1">
+      <a href="https://example.com" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="رابط 1">
+      </a>
+      <p>صندوق 1</p>
+    </div>
+    <!-- الصندوق الثاني -->
+    <div class="box box2">
+      <a href="https://example.com" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="رابط 2">
+      </a>
+      <p>صندوق 2</p>
+    </div>
+    <!-- الصندوق الثالث -->
+    <div class="box box3">
+      <a href="https://example.com" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="رابط 3">
+      </a>
+      <p>صندوق 3</p>
+    </div>
+  </div>
+</body>
+</html>

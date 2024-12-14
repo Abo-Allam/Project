@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navbar with Logo</title>
+  <style>
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+    .navbar .logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 1050px;
+    }
+    .navbar a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 20px;
+      margin: 0 6px;
+      transition: background-color 0.3s ease;
+    }
+    .navbar a:hover {
+      background-color: gray;
+      border-radius: 5px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: 100px 20px 20px;
+      padding: 10px;
+    }
+    .box {
+      width: 30%;
+      padding: 20px;
+      border: 2px solid #000000;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .box1 {
+      background-color: #f6f6f6;
+    }
+    .box2 {
+      background-color: #f6f6f6;
+    }
+    .box3 {
+      background-color: #f6f6f6;
+    }
+    .box a img {
+      width: 100%;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .box a img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="images/TERA STORE LOGO (JPG).jpg" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a>Home</a>
+      <a target="_blank" href="products.html">products</a>
+      <a target="_blank" href="register.html">Register</a>
+      <a target="_blank" href="login.html">Login</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box box1">
+      <a href="Laptops.html" target="_blank">
+        <img src="images/WhatsApp Image 2024-12-12 at 13.52.19_0fb89d9b.jpg" alt="رابط 1">
+      </a>
+      <p style="font-size: xx-large;">Laptop</p>
+    </div>
+    <div class="box box2">
+      <a href="Computers.html" target="_blank">
+        <img src="images/WhatsApp Image 2024-12-12 at 13.53.20_18c27ca1.jpg" alt="رابط 2">
+      </a>
+      <p style="font-size: xx-large;">Computer</p>
+    </div>
+    <div class="box box3">
+      <a href="Accessories.html" target="_blank">
+        <img src="images/WhatsApp Image 2024-12-12 at 13.54.53_b30d2dbc.jpg" alt="رابط 3">
+      </a>
+      <p style="font-size: xx-large;">Accessories</p>
+    </div>
+  </div>
+</body>
+</html>
